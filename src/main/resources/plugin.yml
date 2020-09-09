@@ -1,0 +1,5 @@
+name: RadiantDisguise
+version: ${project.version}
+main: me.clixk.radiantdisguise.RadiantDisguise
+api-version: 1.16
+authors: [ CLIXKBAIT ]
