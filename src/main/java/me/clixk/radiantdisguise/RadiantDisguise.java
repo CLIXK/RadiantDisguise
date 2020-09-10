@@ -1,6 +1,7 @@
 package me.clixk.radiantdisguise;
 
 import lombok.Getter;
+import me.clixk.radiantdisguise.commands.DisguiseCommand;
 import me.clixk.radiantdisguise.config.FileManager;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -25,7 +26,7 @@ public final class RadiantDisguise extends JavaPlugin {
             long l = System.currentTimeMillis();
             plugin.getLogger().log(Level.INFO, "Loading configuration files...");
             lang = new FileManager(this, "lang");
-            // getCommand("baltop").setExecutor(new BaltopCommand());
+            getCommand("baltop").setExecutor(new DisguiseCommand());
 		/*
         Register Events
          */
